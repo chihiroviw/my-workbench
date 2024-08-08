@@ -1,0 +1,12 @@
+newmtl wall
+Kd 0.8 0.8 0.8
+illum 2
+
+newmtl floor
+Kd 0.7 0.3 0.3
+illum 2
+
+newmtl light
+Kd 1 1 1
+Ke 2 2 2
+illum 2

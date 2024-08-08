@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Matrix multiplication</title>
+<script type="text/javascript">
+<!--
+var n = 100, rmax = 100;
+A = new Array();
+B = new Array();
+C = new Array();
+for(i=0;i<n;i++){
+    A[i] = new Array();
+    B[i] = new Array();
+    C[i] = new Array();
+}
+for(i=0;i<n;i++){
+    for(j=0;j<n;j++){
+        A[i][j] = Math.random();
+        B[i][j] = Math.random();
+        C[i][j] = 0.0;
+    }
+}
+s = new Date();
+for(r=0;r<rmax;r++){
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++){
+            for(k=0;k<n;k++){
+                C[i][j] += A[i][k] * B[j][k];
+            }
+        }
+    }
+}
+d = new Date();
+document.write("N = ",n,", # of repeat = ",rmax,"<br>");
+document.write("time = ",(d - s)/1000.0," seconds, ",2.0*rmax*n*n*n/(d-s)*1e-6," Gflops");
+// -->
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,85 @@
+material_fname = obj/miku.mtl
+ngroup=1 nvertex=12354 nvnormal=0 nvtexture=11952
+group=0 nfacegroup=17
+group=0 facegroup=0 nfaces=2425
+group=0 facegroup=1 nfaces=7667
+group=0 facegroup=2 nfaces=3950
+group=0 facegroup=3 nfaces=2222
+group=0 facegroup=4 nfaces=1219
+group=0 facegroup=5 nfaces=618
+group=0 facegroup=6 nfaces=144
+group=0 facegroup=7 nfaces=2810
+group=0 facegroup=8 nfaces=36
+group=0 facegroup=9 nfaces=36
+group=0 facegroup=10 nfaces=8
+group=0 facegroup=11 nfaces=370
+group=0 facegroup=12 nfaces=72
+group=0 facegroup=13 nfaces=112
+group=0 facegroup=14 nfaces=72
+group=0 facegroup=15 nfaces=888
+group=0 facegroup=16 nfaces=312
+group=0 facegroup=0 material=mat00.002 texture_fname=(0,0)
+group=0 facegroup=1 material=mat01.002 texture_fname=(0,0)
+group=0 facegroup=2 material=mat02.002 texture_fname=(0,0)
+group=0 facegroup=3 material=mat03.002 texture_fname=(0,0)
+group=0 facegroup=4 material=mat04.002 texture_fname=(0,0)
+group=0 facegroup=5 material=mat05.002 texture_fname=(0,0)
+group=0 facegroup=6 material=mat06.002 texture_fname=obj/eyeM2.png(106,106)
+group=0 facegroup=7 material=mat07.002 texture_fname=(0,0)
+group=0 facegroup=8 material=mat08.002 texture_fname=(0,0)
+group=0 facegroup=9 material=mat09.002 texture_fname=(0,0)
+group=0 facegroup=10 material=mat10.002 texture_fname=(0,0)
+group=0 facegroup=11 material=mat11.002 texture_fname=(0,0)
+group=0 facegroup=12 material=mat12.002 texture_fname=(0,0)
+group=0 facegroup=13 material=mat13.002 texture_fname=(0,0)
+group=0 facegroup=14 material=mat14.002 texture_fname=(0,0)
+group=0 facegroup=15 material=mat15.002 texture_fname=(0,0)
+group=0 facegroup=16 material=mat16.002 texture_fname=(0,0)
+generating normal vectors
+material_fname = obj/miku.mtl
+ngroup=1 nvertex=12354 nvnormal=0 nvtexture=11952
+group=0 nfacegroup=17
+group=0 facegroup=0 nfaces=2425
+group=0 facegroup=1 nfaces=7667
+group=0 facegroup=2 nfaces=3950
+group=0 facegroup=3 nfaces=2222
+group=0 facegroup=4 nfaces=1219
+group=0 facegroup=5 nfaces=618
+group=0 facegroup=6 nfaces=144
+group=0 facegroup=7 nfaces=2810
+group=0 facegroup=8 nfaces=36
+group=0 facegroup=9 nfaces=36
+group=0 facegroup=10 nfaces=8
+group=0 facegroup=11 nfaces=370
+group=0 facegroup=12 nfaces=72
+group=0 facegroup=13 nfaces=112
+group=0 facegroup=14 nfaces=72
+group=0 facegroup=15 nfaces=888
+group=0 facegroup=16 nfaces=312
+group=0 facegroup=0 material=mat00.002 texture_fname=(0,0)
+group=0 facegroup=1 material=mat01.002 texture_fname=(0,0)
+group=0 facegroup=2 material=mat02.002 texture_fname=(0,0)
+group=0 facegroup=3 material=mat03.002 texture_fname=(0,0)
+group=0 facegroup=4 material=mat04.002 texture_fname=(0,0)
+group=0 facegroup=5 material=mat05.002 texture_fname=(0,0)
+group=0 facegroup=6 material=mat06.002 texture_fname=obj/eyeM2.png(106,106)
+group=0 facegroup=7 material=mat07.002 texture_fname=(0,0)
+group=0 facegroup=8 material=mat08.002 texture_fname=(0,0)
+group=0 facegroup=9 material=mat09.002 texture_fname=(0,0)
+group=0 facegroup=10 material=mat10.002 texture_fname=(0,0)
+group=0 facegroup=11 material=mat11.002 texture_fname=(0,0)
+group=0 facegroup=12 material=mat12.002 texture_fname=(0,0)
+group=0 facegroup=13 material=mat13.002 texture_fname=(0,0)
+group=0 facegroup=14 material=mat14.002 texture_fname=(0,0)
+group=0 facegroup=15 material=mat15.002 texture_fname=(0,0)
+group=0 facegroup=16 material=mat16.002 texture_fname=(0,0)
+generating normal vectors
+in glfwCreateWindow, width=800 height=800
+** warning : you need to write your own code of glFrustum **
+** warning : you need to write your own code of glTranslatef **
+** warning : you need to write your own code of glPushMatrix **
+** warning : you need to write your own code of glRotatef **
+** warning : you need to write your own code of glPopMatrix **
+** warning : you need to write your own code of drawtriangleNZ **
+** warning : you need to write your own code of drawtriangleNTZ **
+** warning : you need to write your own code of drawtriangleCTZ **

@@ -1,0 +1,40 @@
+#version 460
+#extension GL_GOOGLE_include_directive : enable
+
+#include "../rtUtility/rtCommon.glsl"
+
+//payload
+layout(location = 0) rayPayloadEXT hitPayload pay_load;
+
+void main(){
+    vec3 target     = camera_info.pixel00_loc.xyz 
+                    + gl_LaunchIDEXT.x*camera_info.pixel_delta_u.xyz 
+                    + gl_LaunchIDEXT.y*camera_info.pixel_delta_v.xyz;
+
+    pay_load.hit_value = vec3(1.0,1.0,1.0);
+    pay_load.recursive = 4;
+    pay_load.origin = camera_info.lookfrom.xyz;
+    pay_load.direction = normalize(target - camera_info.lookfrom.xyz);
+
+    vec3 color = vec3(0.0);
+    float contribution = 1.0;
+
+    while(0 < pay_load.recursive){
+        traceRayEXT(
+            topLevelAS,
+            gl_RayFlagsOpaqueEXT,
+            0xff,       // cullMask
+            0, 0, 0,    // sbtRecordOffset, sbtRecordStride, missIndex
+            pay_load.origin.xyz,
+            0.001,      // tMin
+            pay_load.direction,
+            10000.0,    // tMax
+            0           // payloadLocation
+        );
+        
+        color += contribution*pay_load.hit_value;
+        contribution *= pay_load.contribution_factor;
+    }
+
+    imageStore(image, ivec2(gl_LaunchIDEXT.xy), vec4(color, 0.0));
+}

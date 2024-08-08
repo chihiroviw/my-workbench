@@ -1,0 +1,14 @@
+CC = x86_64-w64-mingw32-g++
+#CC = g++
+CFLAG = -DFREEGLUT_STATIC -I../ -I../glpng/include
+#CFLAG += -g
+LFLAG = -static -L../glpng/lib -lglpng \
+      -lglut -lglu32 -lopengl32 -lgdi32 -lgdi32 -lwinmm
+TARGET = radiosity
+
+radiosity : main.cpp Application.cpp Scene.cpp
+	$(CC) $(CFLAG) -o $@ $^ $(LFLAG)
+
+clean :
+	rm $(TARGET) *~
+

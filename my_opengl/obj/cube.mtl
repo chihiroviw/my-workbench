@@ -1,0 +1,23 @@
+newmtl red
+Kd 1 0 0
+illum 2
+
+newmtl green
+Kd 0 1 0
+illum 2
+
+newmtl blue
+Kd 0 0 1
+illum 2
+
+newmtl yellow
+Kd 1 1 0
+illum 2
+
+newmtl cyan
+Kd 0 1 1
+illum 2
+
+newmtl magenta
+Kd 1 0 1
+illum 2

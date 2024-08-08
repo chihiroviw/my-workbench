@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Windows",
+            "includePath": [
+                "${env:VK_SDK_PATH}/Include",
+                "C:/Program Files/OpenGL/include",
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++20"
+        }
+    ],
+    "version": 4
+}

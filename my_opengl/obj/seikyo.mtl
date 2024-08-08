@@ -1,0 +1,17 @@
+newmtl Cream
+Kd 0.8000001 0.6484323 0.3792978
+illum 2
+
+newmtl Material
+Kd 0.8 0.8 0.8
+illum 2
+
+newmtl Gray
+Kd 0.1328514 0.1328514 0.1328514
+illum 2
+
+newmtl BuildingsHighRise000
+Kd 0.8 0.8 0.8
+map_Kd BuildingsHighRise000.data # 1024 807
+illum 2
+
