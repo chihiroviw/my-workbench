@@ -1,0 +1,71 @@
+    /*
+    let t = RangeI32{start:0,end:10};
+    for i in &t{
+        print!("{}",i);
+    }
+    println!("");
+    for i in &t{
+        print!("{}",i);
+    }
+    println!("");
+    (&t).hallo();
+    */
+/*     
+struct RangeI32{start:i32,end:i32}
+struct RangeI32_Iter{start:i32,end:i32}
+trait MyTrait{
+    fn hallo(&self){println!("hallo");}
+}
+impl MyTrait for &RangeI32 {}
+
+impl IntoIterator for &RangeI32{
+    type Item = i32;
+    type IntoIter = RangeI32_Iter;
+    fn into_iter(self) -> Self::IntoIter{
+        self.iter()
+    }
+}
+
+
+impl RangeI32 {
+    fn iter(&self)->RangeI32_Iter{
+        RangeI32_Iter{
+            start:self.start,
+            end:self.end
+        }       
+    }
+}
+
+impl Iterator for RangeI32_Iter{
+    type Item = i32;
+    fn next(&mut self) -> Option<Self::Item> {
+        if(self.start == self.end){
+            None
+        }else{
+            let r = self.start;
+            self.start += 1;
+            Some(r)
+        }
+    }
+}*/
+
+
+    const size:usize = 1024*1024*1024;
+    let mut v:Vec<f32>= vec![0.;size];
+    for i in 0..size{v[i] = i as f32;}
+
+    let start = Instant::now();
+        for i in v{
+            let x = 1./i.sqrt(); //6.592
+            //let x = fast_inv_sqrt(i); //5.047s
+        }
+    let end = start.elapsed(); 
+    println!("{},{:03} s",end.as_secs(), end.subsec_nanos()/1_000_000);
+}
+
+fn fast_inv_sqrt(x:f32)->f32{
+    let i = unsafe {*std::mem::transmute::<&f32,&i32>(&x)};
+    let j = 0x5f3759df - (i>>1);
+    let mut y = unsafe {*std::mem::transmute::<&i32,&f32>(&j)};
+    y*(1.5-0.5*x*y*y)
+}
