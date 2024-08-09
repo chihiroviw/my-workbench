@@ -144,7 +144,7 @@ public:
 	}	
     
     void setFpsLimit(double limit){fps_limit = 1.0/limit;}
-    void setEnableFpsCount(bool is){enable_fps_count = is;}
+    void enableFpsCount(bool is){enable_fps_count = is;}
     
     void loop(std::function<void()> process){
         

@@ -5,8 +5,8 @@ Active code page: 65001
 **********************************************************************
 [vcvarsall.bat] Environment initialized for: 'x64'
 make[1]: Entering directory `C:/User/chihiro_vi/workbench/vulkan_vscode'
-cl  /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /utf-8 /std:c++20 /wd4996  /Isrc /I "%VK_SDK_PATH%"/Include /I "C:/Program Files/OpenGL"/Include /I . /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE  src/main.cpp \
-	/link /LIBPATH:"%VK_SDK_PATH%"/Lib /LIBPATH:"C:/Program Files/OpenGL"/lib /NODEFAULTLIB:msvcrtd.lib
+cl  /nologo /W3 /WX- /diagnostics:column /sdl /O2 /Oi /GL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /utf-8 /std:c++20 /wd4996  /Isrc /I "%VK_SDK_PATH%"/Include /I "%GL_SDK_PATH%"/Include /I . /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE  src/main.cpp \
+	/link /LIBPATH:"%VK_SDK_PATH%"/Lib /LIBPATH:"%GL_SDK_PATH%"/lib /NODEFAULTLIB:msvcrtd.lib
 main.cpp
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\swapchain.hpp(133,29): warning C4834: [[nodiscard]] 属性を持つ関数の戻り値を破棄しています
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\accelerationStructre.hpp(197,42): warning C4267: '=': 'size_t' から '_Ty' に変換しました。データが失われているかもしれません。
@@ -18,7 +18,7 @@ C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtShaderBindingTable.h
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtCamera.hpp(9,22): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtCamera.hpp(12,39): warning C4305: '初期化中': 'double' から 'float' へ切り詰めます。
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtCamera.hpp(12,47): warning C4305: '初期化中': 'double' から 'float' へ切り詰めます。
-C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtCamera.hpp(67,41): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtCamera.hpp(63,41): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtObjTest.hpp(46,53): warning C4267: '引数': 'size_t' から 'uint32_t' に変換しました。データが失われているかもしれません。
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtObjTest.hpp(45,76): warning C4267: '引数': 'size_t' から 'uint32_t' に変換しました。データが失われているかもしれません。
 C:\User\chihiro_vi\workbench\vulkan_vscode\src\vk_include\rtObjTest.hpp(51,53): warning C4267: '引数': 'size_t' から 'uint32_t' に変換しました。データが失われているかもしれません。

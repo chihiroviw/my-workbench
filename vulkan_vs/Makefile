@@ -1,5 +1,5 @@
 vulkan_sdk  = "%VK_SDK_PATH%"
-glfw_sdk    = "C:/Program Files/OpenGL"
+glfw_sdk    = "%GL_SDK_PATH%"
 
 include_path= /Isrc /I $(vulkan_sdk)/Include /I $(glfw_sdk)/Include /I .
 link_path	= /link /LIBPATH:$(vulkan_sdk)/Lib /LIBPATH:$(glfw_sdk)/lib
